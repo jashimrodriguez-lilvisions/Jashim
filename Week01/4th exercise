@@ -1,0 +1,2 @@
+setcps(120/60/4)
+s("[ace_bd ace_bd ace_bd ace_bd], [~ akailinn_oh ~ akailinn_oh ~ akailinn_oh ~ akailinn_oh], [casiosk1_hh ~ ~ casiosk1_ht ~ casiosk1_mt]/4, [brown/8 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~], [ ~ ~ ~ gm_synth_drum]/8, [ ~ ~ ~ gm_synth_choir*4], [~ ~ ~ alesissr16_misc], [~ ~ ~ ace_bd*12]/4, [~ ~ gm_piccolo*4 gm_fx_atmosphere*3]/2, [gm_reverse_cymbal ~ ~ ~]/8, [ sawtooth  sawtooth ~ ~]/4, [ ~ ~ bossdr550_bd*4 bossdr550_bd*4]/8, [~ emusp12_bd emusp12_bd*2 emusp12_bd]/16 ")

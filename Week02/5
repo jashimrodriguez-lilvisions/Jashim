@@ -1,0 +1,19 @@
+samples ({
+  P: 'https://cdn.freesound.org/previews/626/626369_1620724-lq.mp3',
+  Kikk: 'https://cdn.freesound.org/previews/361/361951_1103827-lq.mp3',
+  scr: 'https://cdn.freesound.org/previews/275/275996_5142212-lq.mp3',
+  HI: 'https://cdn.freesound.org/previews/652/652019_11532701-lq.mp3',
+  Su: 'https://cdn.freesound.org/previews/171/171603_18300-lq.mp3',
+  Shak: 'https://cdn.freesound.org/previews/18/18436_36084-lq.mp3'
+
+})
+
+setcps(190/120/4)
+
+$: s("[P ~ ~ ~]/4")
+$: s("kikk*2")
+$: s("HI*4 HI*9 HI*4 HI*3").gain(0.06)
+$: s("[scr ~ ~ ~]/4").gain(0.2)
+. delay(0.5)
+$: s("[Su ~ ~ ~]/8")
+$: s("[Shak ~ ~ ~]/2").gain(0.7)

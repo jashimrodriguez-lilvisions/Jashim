@@ -1,0 +1,14 @@
+samples ({
+  Miau: 'https://cdn.freesound.org/previews/579/579724_11502075-lq.mp3',
+  Kik: 'https://cdn.freesound.org/previews/561/561138_12517458-lq.mp3',
+  melodyy: 'https://cdn.freesound.org/previews/453/453150_1453392-lq.mp3',
+  HI: 'https://cdn.freesound.org/previews/762/762800_15550851-lq.mp3'
+
+})
+
+setcps(360/120/4)
+
+$: s("[Miau ~ ~ ~]/4")
+$: s("kik*4").gain(0.4)
+$: s("[melodyy ~ ~ ~]/4").gain(0.5)
+$: s("HI:1(2,8,<0 0 1 2>)").gain(0.4)

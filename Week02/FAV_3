@@ -1,0 +1,24 @@
+samples ({
+  Melow: 'https://cdn.freesound.org/previews/556/556602_1954411-lq.mp3',
+  Kik: 'https://cdn.freesound.org/previews/361/361952_1103827-lq.mp3',
+sn: 'https://cdn.freesound.org/previews/222/222060_1676145-lq.mp3',
+  BASS: 'https://cdn.freesound.org/previews/615/615326_11532701-lq.mp3',
+  Perc: 'https://cdn.freesound.org/previews/266/266731_5039368-lq.mp3',
+  B: 'https://cdn.freesound.org/previews/150/150517_2536633-lq.mp3',
+  dnb: 'https://cdn.freesound.org/previews/337/337819_2540244-lq.mp3',
+  falling: 'https://cdn.freesound.org/previews/506/506787_6980808-lq.mp3',
+  low: 'https://cdn.freesound.org/previews/172/172340_2687421-lq.mp3'
+})
+
+setcps(340/120/4)
+
+$: sound("[Melow ~ ~ ~]/16")
+  .gain(0.7)
+  $: s("kik ~ kik ~" )
+$: s("~ perc ~ perc").gain(0.6)
+$: s("[B ~ ~ ~]/4")
+$: s("sn*2 sn ~ ~").gain(0.7)
+$: s("[dnb ~ ~ ~]/4" ).gain(0.8)
+
+$: s("[falling ~ ~ ~]/8").gain(0.7)
+//$: s ("[low ~ ~ ~]/16").gain(0.6)

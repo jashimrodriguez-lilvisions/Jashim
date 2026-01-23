@@ -1,0 +1,22 @@
+samples ({
+  KICK: 'https://cdn.freesound.org/previews/599/599878_2871314-lq.mp3',
+snarrre: 'https://cdn.freesound.org/previews/208/208385_1939565-lq.mp3',
+  BASS: 'https://cdn.freesound.org/previews/615/615326_11532701-lq.mp3',
+  Perc: 'https://cdn.freesound.org/previews/266/266731_5039368-lq.mp3',
+  B: 'https://cdn.freesound.org/previews/436/436582_4766646-lq.mp3'
+})
+
+setcps(240/120/4)
+
+$: sound("supersaw")
+  .note("<c4 e4 g4 b4 a4 g4 e4>")
+  .slow(1.5)
+  .gain(0.7)
+  .cutoff("800 1200 500 1200")
+
+$: sound("KICK*4")
+
+$: sound("~ ~ snarrre ~ snarrre ~ ~ ~ snarrre ~ snarrre ~")
+
+$: sound("perc*4 ~ perc ~").gain(0.3)
+$: sound("[B ~ ~ ~]/4")

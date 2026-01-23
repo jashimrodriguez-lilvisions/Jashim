@@ -13,7 +13,7 @@ sn: 'https://cdn.freesound.org/previews/222/222060_1676145-lq.mp3',
 setcps(340/120/4)
 
 $: sound("[Melow ~ ~ ~]/16")
-  .gain(0.7)
+  .gain(0.8)
   $: s("kik ~ kik ~" )
 $: s("~ perc ~ perc").gain(0.6)
 $: s("[B ~ ~ ~]/4")

@@ -1,3 +1,4 @@
+//Jashim
 samples ('github:concordia-dcart/samples-extra')
   samples ({
     F: 'https://cdn.freesound.org/previews/344/344910_241103-lq.mp3',
@@ -19,4 +20,7 @@ s("F/4 ~ ~ ~").room(0.6).delay(0.7).gain(0.3),
   s("who who ~ ~ [ 0 0 0 who*5]/3").gain(0.5).delay(0.1),
 
  s("kalimba4*3 [< 0 0 1 0>] ~ ~").gain(0.4),
-  note("40 30 ~ 50~").s("gm_lead_2_sawtooth").room(0.6).delay(0.7)
+  
+  n("40 30 ~ 50~").s("gm_lead_2_sawtooth").room(0.6).delay(0.7)
+
+)

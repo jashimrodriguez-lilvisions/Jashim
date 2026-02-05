@@ -42,6 +42,11 @@ s("perr-perc*2 ~ [ ~ ~ perr-perc ~] ~ woodblock").gain(0.1)
   s("~ ~ ~ ~ 1/16 ~ ~ ~").s("bossdr220_ht")
   .gain(0.6)
   .room(0.3),
+
+   s("1/17 1/17 1/17 ~ ~ ~ ~ ~ ~ ~").s("gm_guitar_fret_noise")
+  .gain(0.2)
+  .room(0.3),
+
   
   
 //bass

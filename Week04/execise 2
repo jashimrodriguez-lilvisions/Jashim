@@ -1,0 +1,59 @@
+//Jashim
+samples ('github:concordia-dcart/samples-extra')
+  samples ({
+    F: 'https://cdn.freesound.org/previews/344/344910_241103-lq.mp3',
+    T: 'https://cdn.freesound.org/previews/336/336207_5137631-lq.mp3',
+    Musica:'https://cdn.freesound.org/previews/344/344910_241103-lq.mp3',
+    pia:'https://cdn.freesound.org/previews/629/629149_12574855-lq.mp3'
+  })
+
+  setcps(75/60/4)
+
+stack (
+  //drums
+
+s("linnlm1_rim*4 ~ linnlm1_rim*4 ~")
+  .gain(0.2)
+  .room(0.5),
+  
+s("perr-perc*2 ~ [ ~ ~ perr-perc ~] ~ woodblock").gain(0.1)
+  .room(0.4),
+
+  s("~ [Musica]/16 ~ ~")
+  .gain(0.4)
+  .room(0.2),
+
+  s("ms404_bd*2 ms404_bd*2 ms404_bd*2 ms404_bd*4")
+  .gain(0.7),
+  
+  
+
+  
+  
+//bass
+  n("3 3 2 3").s("gm_fretless_bass")
+  .room(0.7)
+  .gain(0.7)
+  .delay(0.2),
+  
+  n("3 3 3 3").s("bassdrum1"),
+
+
+  //synths
+
+
+
+// s("kalimba4*3 [< 0 0 1 0>] ~ ~").gain(0.4),
+  
+  n("[[[20 30 ~ 30 ~] ~ ~ ~] ~ ~ ~] ").s("gm_lead_2_sawtooth")
+  .gain(0.6)
+  .room(0.6)
+  .delay(0.7),
+
+  s("pia/4 ~ ~ ~")
+  .room(0.6)
+  .gain(0.7)
+  .delay(0.03)
+  
+  
+)

@@ -1,0 +1,47 @@
+//Jashim
+samples ('github:concordia-dcart/samples-extra')
+  samples ({
+    z: 'https://cdn.freesound.org/previews/336/336207_5137631-lq.mp3',
+    M:'https://cdn.freesound.org/previews/344/344910_241103-lq.mp3'
+  })
+
+  setcps(170/60/4)
+
+stack (
+  //drums
+
+s("[~ 9000_hh] [~ 9000_hh] [~ 9000_hh][~ 9000_hh] ")
+  .gain(0.7)
+  .room(0.2),
+
+  s("ms404_bd ms404_bd ms404_bd ms404_bd")
+  ,
+
+
+
+  s("~ ~ ~[dr220_bd dr220_bd ~ ~]")
+  .gain(0.9),
+
+  s("akaimpc60_sd akaimpc60_sd akaimpc60_sd*2 akaimpc60_sd")
+  .gain(0.2),
+  
+
+  
+  
+//bass
+  
+  n("[-3 -3 1 1]")
+    .scale("major blues")
+    .s("gm_fretless_bass"),
+
+
+  //synths
+
+n("[[3 3 1 1], [2 2 5 7] [3 3 5 7], [9 9 7 7]][[6 6 2 2], [4 4 10 14] [6 6 10 14], [18 18 14 14]]/8").scale("major blues")
+    .s("gm_synth_strings_1")
+  .room(0.3)
+  .delay(0.7)
+  .gain(0.8)
+  
+  
+)

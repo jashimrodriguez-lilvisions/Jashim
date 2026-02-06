@@ -1,0 +1,42 @@
+//Jashim
+samples ('github:concordia-dcart/samples-extra')
+  samples ({
+    x: 'https://cdn.freesound.org/previews/65/65779_894560-lq.mp3"',
+    z: 'https://cdn.freesound.org/previews/336/336207_5137631-lq.mp3',
+    M:'https://cdn.freesound.org/previews/344/344910_241103-lq.mp3',
+    pia:'https://cdn.freesound.org/previews/629/629149_12574855-lq.mp3'
+  })
+
+  setcps(120/60/4)
+
+stack (
+  //drums
+
+s("[~ 9000_hh] [~ 9000_hh] [~ 9000_hh][~ 9000_hh] ")
+  .gain(0.2)
+  .room(0.2),
+
+  s("ms404_bd ms404_bd ms404_bd ms404_bd")
+  ,
+
+  s("x ~ ~ ~"),
+  
+
+  
+  
+//bass
+  n("7 7 7 [9 7]").s("gm_fretless_bass")
+  .room(0.7)
+  .gain(0.8)
+  .delay(0.2),
+  
+
+
+  //synths
+
+n("<[2 2 6 4][2 3 4 2][ 1 4 6 7][4 6 8 1]>")
+    .s("gm_steel_drums")
+  .room(0.3)
+  .delay(0.4)
+  
+)

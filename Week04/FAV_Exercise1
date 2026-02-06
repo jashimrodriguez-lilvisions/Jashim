@@ -100,5 +100,13 @@ n("0...11").s("dsynth").scale("spanish heptatonic")
   .gain(0.4)
   .room(0.6)
   .delay(0.7),
+
+
   
+
+n("[[3 3 1 1]/16, [2 2 5 7]/16 [3 3 5 7]/16, [9 9 7 7]]/16[[6 6 2 2]/16, [4 4 10 14]/16 [6 6 10 14]/16, [18 18 14 14]]/8").scale("major blues")
+    .s("gm_synth_strings_1")
+  .room(0.3)
+  .delay(0.7)
+  .gain(0.1)
 )

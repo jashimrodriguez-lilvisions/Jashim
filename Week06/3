@@ -1,0 +1,22 @@
+samples ({
+  ah: 'https://cdn.freesound.org/previews/842/842612_3905081-lq.mp3',
+Highhat: 'https://cdn.freesound.org/previews/332/332364_2127539-lq.mp3',
+ Bass: 'https://cdn.freesound.org/previews/349/349031_3356610-lq.mp3',
+
+Melody: 'https://cdn.freesound.org/previews/629/629152_12574855-lq.mp3',
+melody: 'https://cdn.freesound.org/previews/684/684319_4819210-lq.mp3'
+
+})
+setcps(180/120/4)
+$: s("ah ah*8").gain(0.3)
+$: s("~  [~ Highhat] ~ [~ Highhat] ~ [~ Highhat] ~ [~ Highhat] ").gain(0.5) 
+$: s("bass*4").gain(0.5) 
+
+
+$: s("rim:1(2,8,<0 0 0 1>)").gain(0.03)
+$: sound("bd sd*2 ~ bd sd ~ sd ~")
+$: sound("hh*16, ~ oh*8").gain(0.7)
+
+$: note("c2 ~ g1 ~ e1 ~ g1 ~ c2 ~ g1 ~ e1 ~ g1")
+   .sound("sawtooth")
+   .gain(0.5)

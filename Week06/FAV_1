@@ -1,3 +1,4 @@
+//JASHIM
 samples ('github:concordia-dcart/samples-extra')
 samples ('github:jashimrodriguez-lilvisions/SOUNDSLV')
 
@@ -97,4 +98,17 @@ $: arrange(
 .size(0.3)
 .color("white").punchcard()
 
-//
+//BASS
+
+$: arrange(
+    [brek, "~ ~ ~ ~"],
+    [sect2, "x ~ x ~ ~ ~ x ~"],
+    [sect3, "x ~ x x ~ x ~ x"]
+)
+.n("c2 e2 g1 a1 c2 g1 e2 a1")  
+.s("gm_slap_bass_2")          
+.lpf(200)                       
+.room(0.2)
+.size(0.2)
+.gain(1.5)
+

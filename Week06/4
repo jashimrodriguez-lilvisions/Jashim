@@ -1,0 +1,22 @@
+
+setcpm(120/4)  
+
+
+$: sound("bd ~ ~ sd ~ ~ bd ~ ~ sd ~ ~") 
+
+
+$: sound("hh*8, ~ hh*8")             
+
+
+$: note("c2 ~ c2 ~ g1 ~ g1 ~ c2 ~ c2 ~ g1 ~ g1")
+   .sound("square")
+   .gain(0.6)
+.delay(0.4)
+.room(0.5)
+.size(8)
+
+$: s("[~ bossdr220_hh] [~ bossdr220_hh] [~ bossdr220_hh][~ bossdr220_hh]")
+.gain(0.7)
+.color("white").punchcard()
+
+

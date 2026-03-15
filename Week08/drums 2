@@ -1,0 +1,5 @@
+setcps(125/60/4)
+stack(
+  s("bd ~ bd ~ bd ~ bd ~"),  
+  s("~ ~ sd ~ ~ ~ sd ~"),    
+  s("hh*8").gain(0.7)      )

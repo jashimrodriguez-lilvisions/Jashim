@@ -1,0 +1,20 @@
+
+// Jashim
+noise(2, 0.3)
+  .contrast(2)
+  .brightness(-0.3)
+  .modulate(
+    noise(2)
+      .rotate(() => time * 0.1)
+      .scale(() => 1 + Math.sin(time * 0.2) * 0.3),
+    () => a.fft[0] * 1.5 + 0.2
+  )
+  .add(
+    osc(6, 0.05, 1.5)
+      .kaleid(3)
+      .rotate(() => time * -0.2)
+      .modulate(noise(3), 0.3)
+      .luma(0.4, 0.2),
+    0.5
+  )
+  .out(o0)

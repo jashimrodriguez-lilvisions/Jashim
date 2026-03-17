@@ -1,0 +1,39 @@
+setcps(125/60/4)
+
+let sect1 = 4;
+let sect2 = 8;
+let sect3 = 16;
+let brek = 8;
+
+
+stack(
+  s("bd ~ bd bd ~ bd ~ ~").room(0.5).rlp(10000).rdim(8000).gain(0.6),   
+  s("~ sd ~ ~ ~ sd ~ ~").gain(0.6),    
+s("hh*8").room("2").size("4").crush(4).gain(0.4).pan("<.5 1 .5 0>")
+  ._scope(),
+  
+  arrange(
+     [brek, "~ ~ ~ ~"],
+  [sect2, "x x ~ ~"],
+          [sect3, " x ~ [x x] ~"],
+  [sect3, " ~ ~ ~ x"])
+  .n("c1 [c3 c1 gc3]")
+  .s("gm_violin")
+  .gain(0.6)
+  .room(0.9)
+  .delay(0.5)
+  .pan("<.5 1 .5 0>")
+.size(8),
+    
+   arrange(
+     [brek, "~ ~ ~ ~"],
+  [sect2, " x ~ x ~"],
+          [sect3, " x ~ [x x] ~"],
+  [sect3, " ~ ~ ~ x"])
+  .n("c c3".sub(14))
+  .s("gm_synth_bass_1")
+  .gain(0.9)
+  .room(0.9)
+  .delay(0.5)
+.size(8)
+)

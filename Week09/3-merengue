@@ -1,0 +1,31 @@
+samples ('github:concordia-dcart/samples-extra')
+  samples ({
+    F: 'https://cdn.freesound.org/previews/827/827085_14213026-lq.mp3',
+    B: 'https://cdn.freesound.org/previews/131/131008_2318696-lq.mp3',
+    g: 'https://cdn.freesound.org/previews/336/336207_5137631-lq.mp3'
+    
+  })
+
+  setcps(135/60/4)
+
+stack (
+s("perr-kk(2,8)*2").gain(0.5),
+s("perr-sn(3,8)*2").mask("[0 1!3]*2").gain(0.5),
+s("woodblock*3 ~ ~ woodblock woodblock"),
+
+s("B B B B").gain(0.5).gain(0.6))
+
+//CUMBIA
+stack (
+s("perr-kk perr-kk perr-kk perr-kk")
+.room(0.2),
+s(" [bossdr550_sh [bossdr550_sh*2]][bossdr550_sh [bossdr550_sh*2]][bossdr550_sh [bossdr550_sh*2]][bossdr550_sh [bossdr550_sh*2]]")
+.room(0.03)
+.gain(0.5),
+  
+s("[ alesissr16_cb ~] [ alesissr16_cb ~] [ alesissr16_cb ~] [ alesissr16_cb ~]")
+.gain(0.4)
+.room(0.05),
+
+s(" ~  [ ~ circuitstom_ht*2]")
+ .gain(0.7) )
